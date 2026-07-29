@@ -1,0 +1,20 @@
+.Tabs {
+  width: 100%;
+}
+
+.TabItem {
+  text-align: center;
+  padding: 8px;
+
+  color: #000;
+  text-decoration: none;
+}
+
+.TabItem.active {
+  border-bottom: 2px solid #000;
+}
+
+.TabList {
+  display: flex;
+  justify-content: start;
+}
