@@ -1,0 +1,72 @@
+.SideMenu {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+}
+
+.SideMenu header {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.SideMenu h1 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.MenuList {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.MenuListHeader {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.MenuListHeader:hover {
+  cursor: pointer;
+  background-color: #1a1a1a;
+}
+
+.MenuItem {
+  font-size: 14px;
+  display: flex;
+}
+
+.MenuItem a {
+  padding: 8px;
+  text-decoration: none;
+  color: #fff;
+  width: 100%;
+}
+
+.MenuItem a:hover {
+  background-color: #1a1a1a;
+  cursor: pointer;
+}
+
+.MenuItemAction {
+  display: inline-block;
+  rotate: 180deg;
+  transition: rotate 100ms linear;
+}
+
+.MenuItemAction.Active {
+  rotate: 0deg;
+}
