@@ -22,7 +22,9 @@ export function MenuList({ items, label }: MenuListProps) {
       </li>
 
       {open &&
-        items.map((item) => <MenuItem label={item.label} path={item.path} />)}
+        items.map((item) => (
+          <MenuItem label={item.label} path={item.path} key={item.path} />
+        ))}
     </ul>
   );
 }

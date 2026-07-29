@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import styles from "./index.module.css";
 
 export interface MenuItemProps {
-  label: string;
+  label?: string;
   path: string;
 }
 
