@@ -1,6 +1,6 @@
 import { Tabs } from "../../../components/Tabs";
 
-export function UseContext() {
+export function UseContextContent() {
   return (
     <section>
       <h1>useContext</h1>
@@ -47,4 +47,4 @@ export function UseContext() {
   );
 }
 
-UseContext.displayName = "UseContext";
+UseContextContent.displayName = "UseContextContent";

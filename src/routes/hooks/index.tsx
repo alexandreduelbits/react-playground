@@ -1,5 +1,6 @@
 import type { AppRoute } from "../types";
-import { UseContext } from "../../pages/hooks/useContext";
+import { UseContextContent } from "../../pages/hooks/useContext";
+import { UseEffectContent } from "../../pages/hooks/useEffect/ index";
 
 export const hooksRoutes: AppRoute[] = [
   {
@@ -7,9 +8,14 @@ export const hooksRoutes: AppRoute[] = [
     path: "/hooks",
     children: [
       {
+        path: "use-effect",
+        title: "useEffect",
+        element: <UseEffectContent />,
+      },
+      {
         path: "use-context",
         title: "useContext",
-        element: <UseContext />,
+        element: <UseContextContent />,
       },
     ],
   },
