@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from "react";
+import { Suspense, lazy } from "react";
 import { PromiseContent } from "./PromiseContent";
 
 const LazyLoadedContent = lazy(() => import("./LazyLoadedContent"));
